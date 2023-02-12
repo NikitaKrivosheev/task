@@ -8,7 +8,7 @@
 Console.WriteLine("Введите числа:");
 int firstNum = Convert.ToInt32(Console.ReadLine());
 int lastNum = Convert.ToInt32(Console.ReadLine());
-if(firstNum >= lastNum)
+if(firstNum > lastNum)
 {
     Console.WriteLine("max = " + firstNum);
 }
