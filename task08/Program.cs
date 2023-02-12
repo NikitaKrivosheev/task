@@ -17,3 +17,5 @@ while(i < N-1)
     i += 2;
     Console.Write($"{i}, ");
 }
+
+if(i == 0) Console.Write("Ошибка");
