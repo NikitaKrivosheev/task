@@ -22,8 +22,11 @@
 // else if(day == g) Console.WriteLine("Sunday");
 // else Console.WriteLine("today is not your day of the week");
 
+
 Console.WriteLine("Введите день недели:");
+
 string day = Console.ReadLine();
+
 if(day == "1") Console.WriteLine("Monday");
 else if(day == "2") Console.WriteLine("Tuesday");
 else if(day == "3") Console.WriteLine("Wednesday");

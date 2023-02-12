@@ -5,8 +5,11 @@
 // 782 -> 2
 // 918 -> 8
 
+
 Console.WriteLine("Введите числа:");
+
 int num = Convert.ToInt32(Console.ReadLine());
+
 if(num >= 100 && num <= 999)
 {
     int lastNum = num % 10;

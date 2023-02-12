@@ -6,10 +6,13 @@
 // a = 9, b = -3 -> да
 // a = -3 b = 9 -> нет
 
+
 Console.WriteLine("Введите числа:");
+
 int firstNum = Convert.ToInt32(Console.ReadLine());
 int lastNum = Convert.ToInt32(Console.ReadLine());
 int square = firstNum * firstNum;
+
 if(square == lastNum)
 {
 Console.WriteLine($"a = {firstNum}, b = {lastNum} -> Да");

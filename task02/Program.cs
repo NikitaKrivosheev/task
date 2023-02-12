@@ -5,9 +5,12 @@
 // a = 2; b = 10 -> max = 10
 // a = -9; b = -3 -> max = -3
 
+
 Console.WriteLine("Введите числа:");
+
 int firstNum = Convert.ToInt32(Console.ReadLine());
 int lastNum = Convert.ToInt32(Console.ReadLine());
+
 if(firstNum > lastNum)
 {
     Console.WriteLine("max = " + firstNum);
