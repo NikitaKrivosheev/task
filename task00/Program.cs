@@ -7,7 +7,7 @@
 // -3 -> 9
 // -7 -> 49
 
-// Console.WriteLine("Введите число:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int square = num * num;
-// Console.WriteLine("Квадрат числа " + num + " = " + square);      // or Console.WriteLine($"Квадрат числа  {num} = {square}");
+Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
+int square = num * num;
+Console.WriteLine("Квадрат числа " + num + " = " + square);      // or Console.WriteLine($"Квадрат числа  {num} = {square}");
