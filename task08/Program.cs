@@ -7,12 +7,12 @@
 
 Console.WriteLine("Введите число:");
 
-int N = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 int i = 0;
 
-Console.Write($"{N} -> ");
+Console.Write($"{n} -> ");
 
-while(i < N-1)
+while(i < n-1)
 {
     i += 2;
     Console.Write($"{i}, ");

@@ -14,7 +14,6 @@ int max = a;
 
 Console.Write($"{a}, {b}, {c} -> ");
 
-if(a > max) max = a;
 if(b > max) max = b;
 if(c > max) max = c; 
 
