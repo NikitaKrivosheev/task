@@ -13,7 +13,7 @@ int lastNum = Convert.ToInt32(Console.ReadLine());
 
 Console.Write($"a = {firstNum}; b = {lastNum} -> ");
 
-if(firstNum > lastNum)
+if (firstNum > lastNum)
 {
     Console.WriteLine("max = " + firstNum);
 }
