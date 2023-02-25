@@ -4,6 +4,7 @@
 // 23432 - да 
 // 12821 - да
 
+//---------------------------------------------------------------------------------------------------------------------------------------------------------ВАРИАНТ-1
 
 int Prompt(string message)
 {
@@ -11,7 +12,7 @@ int Prompt(string message)
     int result = Convert.ToInt32(Console.ReadLine());
     return result;
 }
-int number = Prompt("Ведите число ");
+int number = Prompt("Ведите число: ");
 
 int NumberPalindrome(int num)
 {
@@ -21,8 +22,9 @@ int NumberPalindrome(int num)
     {
         i = i + firstNum % 10;
         firstNum = firstNum / 10;
-        if (i != num) i = i * 10;
+        i = i * 10;
     }
+    i = i / 10;
     return i;
 }
 int res = NumberPalindrome(number);
@@ -32,7 +34,7 @@ if (number == res)
 else
     Console.WriteLine($"{number} -> Нет");
 
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------or
+//---------------------------------------------------------------------------------------------------------------------------------------------------------ВАРИАНТ-2
 
 // int Prompt(string message)
 // {
@@ -40,7 +42,7 @@ else
 //     int result = Convert.ToInt32(Console.ReadLine());
 //     return result;
 // }
-// int number = Prompt("Ведите число ");
+// int number = Prompt("Ведите число: ");
 
 // int NumberPalindrome(int num)
 // {
@@ -50,9 +52,8 @@ else
 //     {
 //         i = i + firstNum % 10;
 //         firstNum = firstNum / 10;
-//         i = i * 10;
+//         if (i != num) i = i * 10;
 //     }
-//     i = i / 10;
 //     return i;
 // }
 // int res = NumberPalindrome(number);
@@ -61,4 +62,3 @@ else
 //     Console.WriteLine($"{number} -> Да");
 // else
 //     Console.WriteLine($"{number} -> Нет");
-
