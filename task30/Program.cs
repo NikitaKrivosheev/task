@@ -20,7 +20,8 @@
 //     int count = array.Length;
 //     for (int i = 0; i < count; i++)
 //     {
-//         Console.Write($"{array[i]}, ");
+//         Console.Write($"{array[i]}");
+//         if (i < count - 1) Console.Write($", ");
 //     }
 // }
 
