@@ -53,8 +53,8 @@ double SearchMinNumbers(double[] arr)
 
 double DifferenceMaxMin(double num, double num2)
 {
-    double Difference = num - num2;
-    return Difference;
+    double difference = num - num2;
+    return difference;
 }
 
 double[] array = ArrayRndDouble(10, 1, 100);
