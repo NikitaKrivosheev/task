@@ -3,8 +3,9 @@
 // 0, 7, 8, -2, -2 -> 2
 // -1, -7, 567, 89, 223 -> 3
 
-Console.Write("Введите количество элементов массива:");
+Console.Write("Введите количество элементов массива: ");
 int digit = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите элементы массива: ");
 
 int[] CreateArrayInt(int num)
 {
