@@ -74,10 +74,10 @@ int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 int SumMatrixInt(int[,] matrix)
 {
     int sum = 0;
-    int size = matrix.GetLength(0);
-    if (size > matrix.GetLength(1)) size = matrix.GetLength(1);
+    // int size = matrix.GetLength(0);
+    // if (size > matrix.GetLength(1)) size = matrix.GetLength(1);
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < matrix.GetLength(0) && i < matrix.GetLength(1); i++)
     {
         sum += matrix[i, i];
     }
