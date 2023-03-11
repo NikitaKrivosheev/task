@@ -37,16 +37,10 @@ void PrintMatrix(int[,] matrix)
 
 bool PositionElement(int[,] matrix, int pos, int pos2)
 {
-    if (pos < matrix.GetLength(0) && pos2 < matrix.GetLength(1))
-    {
-        Console.WriteLine($"Элемент в двухмерном массиве: {matrix[pos, pos2]}");
-        return true;
-    }
-    else
-    {
-        Console.WriteLine($"{pos},{pos2} такого элемента в массиве нет.");
-        return false;
-    }
+    return pos < matrix.GetLength(0)
+        && pos2 < matrix.GetLength(1)
+        && pos > 0
+        && pos2 > 0;
 }
 
 int[,] matrixRnd = CreateMatrixRndInt(3, 4, 1, 10);
@@ -55,19 +49,8 @@ PrintMatrix(matrixRnd);
 Console.WriteLine($"Введите позиции элемента в двумерном массиве: ");
 int positionRow = Convert.ToInt32(Console.ReadLine());
 int positionColumn = Convert.ToInt32(Console.ReadLine());
-PositionElement(matrixRnd, positionRow, positionColumn);
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------На всякий случай
-
-// bool PositionElement(int[,] matrix, int pos, int pos2)
-// {
-//     if (pos < matrix.GetLength(0) && pos2 < matrix.GetLength(1))
-//         return true;
-//     else
-//         return false;
-// }
-
-// if (PositionElement(matrixRnd, positionRow, positionColumn))
-//     Console.WriteLine($"Элемент в двухмерном массиве: {matrixRnd[positionRow, positionColumn]}");
-// else
-//     Console.WriteLine($"{positionRow},{positionColumn} такого элемента в массиве нет.");
+if (PositionElement(matrixRnd, positionRow, positionColumn))
+    Console.WriteLine($"Элемент в двухмерном массиве: {matrixRnd[positionRow, positionColumn]}");
+else
+    Console.WriteLine($"{positionRow},{positionColumn} такого элемента в массиве нет.");
