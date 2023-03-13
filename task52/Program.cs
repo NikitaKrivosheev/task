@@ -61,5 +61,5 @@ void PrintAverageMatrix(double[] arr)
 int[,] matrixRnd = CreateMatrixRndInt(3, 4, 1, 10);
 double[] averageMatrix = AverageMatrix(matrixRnd);
 PrintMatrix(matrixRnd);
-Console.WriteLine("Среднее фрифметическое каждого столбца:");
+Console.WriteLine("Среднее арифметическое каждого столбца:");
 PrintAverageMatrix(averageMatrix);
