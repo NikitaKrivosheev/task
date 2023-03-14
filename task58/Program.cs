@@ -44,12 +44,22 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] matrixRndA = CreateMatrixRndInt(2, 3, 1, 10);
-int[,] matrixRndB = CreateMatrixRndInt(3, 2, 1, 10);
+bool check(int[,] matrixA, int[,] matrixB)
+{
+    if (matrixA.GetLength(0) == matrixB.GetLength(1)) return true;
+    else return false;
+}
+
+int[,] matrixRndA = CreateMatrixRndInt(4, 3, 1, 10);
+int[,] matrixRndB = CreateMatrixRndInt(3, 4, 1, 10);
 int[,] productOfTwoMatrices = ProductOfTwoMatrices(matrixRndA, matrixRndB);
 PrintMatrix(matrixRndA);
 Console.WriteLine();
 PrintMatrix(matrixRndB);
 Console.WriteLine();
-PrintMatrix(productOfTwoMatrices);
+if (check(matrixRndA, matrixRndB))
+    PrintMatrix(productOfTwoMatrices);
+else
+    Console.WriteLine($"Матрицу (A) можно умножить на матрицу (B) только в том случае, если число столбцов матрицы (A) равняется числу строк матрицы (B).");
+
 
