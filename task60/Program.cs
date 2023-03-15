@@ -2,7 +2,7 @@
 // двузначных чисел. Напишите программу, которая будет построчно выводить
 // массив, добавляя индексы каждого элемента.
 
-int[,,] CreateMatrixInt(int rows, int columns, int depth, int count)
+int[,,] CreateMatrixInt(int rows, int columns, int depth, int min, int max)
 {
     int[,,] matrix = new int[rows, columns, depth];
     for (int j = 0; j < matrix.GetLength(1); j++)
@@ -11,8 +11,9 @@ int[,,] CreateMatrixInt(int rows, int columns, int depth, int count)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
-                matrix[i, j, k] += count;
-                count += 1;
+                if (min >= 10 && max <= 99)
+                    matrix[i, j, k] += min;
+                min += 1;
             }
         }
     }
@@ -48,7 +49,7 @@ bool CheckMinMax(int min, int max)
 
 int from = 50;
 int before = 99;
-int[,,] matrixInt = CreateMatrixInt(3, 3, 3, from);
+int[,,] matrixInt = CreateMatrixInt(3, 3, 3, from, before);
 if (CheckMinMax(from, before))
     PrintMatrix(matrixInt);
 else
