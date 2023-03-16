@@ -8,10 +8,10 @@ int numberM = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
-int SumNumbers(int num1, int num2)
+int SumNumbers(int m, int n)
 {
-    if (num2 < num1) return 0;
-    else return num2 + SumNumbers(num1, num2 - 1);
+    if (m > n) return 0;
+    else return m + SumNumbers(m + 1, n);
 }
 
 int sumNumbers = SumNumbers(numberM, numberN);
