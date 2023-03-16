@@ -15,5 +15,7 @@ int SumNumbers(int num1, int num2)
 }
 
 int sumNumbers = SumNumbers(numberM, numberN);
-if (numberM < 0) Console.WriteLine($"Ошибка ввода данных.");
-else Console.WriteLine($"Сумма от {numberM} до {numberN} => {sumNumbers}");
+if (numberM < 0 && numberM < 0)
+    Console.WriteLine($"Ошибка ввода данных.");
+else
+    Console.WriteLine($"Сумма от {numberM} до {numberN} => {sumNumbers}");
