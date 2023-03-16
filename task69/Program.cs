@@ -7,11 +7,13 @@ Console.Write("Введите число: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите степень числа: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-int powNumbers = PowNumbers(numberA, numberB);
-Console.WriteLine($"{numberA}^{numberB} -> {powNumbers}");
 
 int PowNumbers(int num1, int num2)
 {
     if (num2 == 0) return 1;
     else return num1 * PowNumbers(num1, num2 - 1);
 }
+
+int powNumbers = PowNumbers(numberA, numberB);
+if (numberB < 0) Console.WriteLine($"Ошибка ввода данных.");
+else Console.WriteLine($"{numberA}^{numberB} -> {powNumbers}");
