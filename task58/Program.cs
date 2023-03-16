@@ -44,7 +44,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-bool check(int[,] matrixA, int[,] matrixB)
+bool Сheck(int[,] matrixA, int[,] matrixB)
 {
     if (matrixA.GetLength(0) == matrixB.GetLength(1)) return true;
     else return false;
@@ -57,7 +57,7 @@ PrintMatrix(matrixRndA);
 Console.WriteLine();
 PrintMatrix(matrixRndB);
 Console.WriteLine();
-if (check(matrixRndA, matrixRndB))
+if (Сheck(matrixRndA, matrixRndB))
     PrintMatrix(productOfTwoMatrices);
 else
     Console.WriteLine($"Матрицу (A) можно умножить на матрицу (B) только в том случае, если число столбцов матрицы (A) равняется числу строк матрицы (B).");
